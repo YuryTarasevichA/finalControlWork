@@ -16,7 +16,7 @@ void PrintNewArray(string [] arr)
     int count = 0;
     for (int i = 0; i < arr.Length; i++)
     {
-        if (arr[i].Length <= 3)
+        if (arr[i].Length <= 2)
         {
             if (i < arr.Length - 1) Console.Write($"{arr[i]}, ");
             else Console.Write($"{arr[i]}");
@@ -24,6 +24,7 @@ void PrintNewArray(string [] arr)
         }
     }
     Console.Write("]");
+   
 }
 Console.WriteLine("Введите строки через пробел: ");
 string input = Console.ReadLine();
